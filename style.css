@@ -52,6 +52,8 @@ header{
 h1{
     font-size: 100px;
     margin-left: 35px;
+ 
+    color: white;
 }
 
 .text-yellow{
@@ -156,9 +158,9 @@ footer{
 }
 
 .immagine-custom{
-height: 400px;
+height: 330px;
 
-width: 400px;
+width: 330px;
 border-radius: 50%;
 
 position: relative;
@@ -228,4 +230,30 @@ position: relative;
 }
 h2, h3{
     color: var(--main);
+}
+.h3custom{
+    color: white;
+
+}
+
+p{
+    color: var(--text);
+}
+
+
+.pcustom{
+    color: white !important;
+}
+
+
+.h3custom::after{
+    content:"";
+    border-bottom: solid  var(--acc);
+    background-color: var(--acc);
+    height: 3px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
 }
